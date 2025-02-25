@@ -55,7 +55,8 @@ function handleKeyboardInput(event){
     else if(['+', '-', '*', '/'].includes(key)){
         addOperator(key);
     }
-    else if(key === '='){
+    else if(key === '='){ 
+        //Using Enter here was giving a bit errors like sometimes clearing the code(coz it was last clicked) && Issues when using both click and keyboard sometimes
         if (expression !== '') {
             submit();
         }
