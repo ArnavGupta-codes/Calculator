@@ -55,7 +55,7 @@ function handleKeyboardInput(event){
     else if(['+', '-', '*', '/'].includes(key)){
         addOperator(key);
     }
-    else if(key === 'Enter' || key === '='){
+    else if(key === '='){
         if (expression !== '') {
             submit();
         }
@@ -63,7 +63,7 @@ function handleKeyboardInput(event){
     else if(key === 'Backspace'){
         backspace();
     }
-    else if (key === 'Escape'){
+    else if (key === 'Escape' || key === 'Enter'){
         clear();
     }
     else if (key === '.') {
